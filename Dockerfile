@@ -1,6 +1,6 @@
 FROM debian:bullseye-slim
 
-LABEL maintainer.0="@WesleyCharlesBlake" 
+LABEL maintainer.0="dr0ther" 
 
 RUN useradd -r bitcoin \
   && apt-get update -y \
