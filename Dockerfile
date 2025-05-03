@@ -9,9 +9,9 @@ RUN useradd -r bitcoin \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV BITCOIN_VERSION_PATCH=1
-ENV BITCOIN_MAJOR_VER=0.20
+ENV BITCOIN_MAJOR_VER=28
 ENV BITCOIN_DATA=/home/bitcoin/.bitcoin
-ENV KNOTS_BUILD=20200815
+ENV KNOTS_BUILD=20250305
 ENV PATH=/opt/bitcoin-${BITCOIN_MAJOR_VER}.${BITCOIN_VERSION_PATCH}.knots${KNOTS_BUILD}/bin:$PATH
 
 WORKDIR /opt
